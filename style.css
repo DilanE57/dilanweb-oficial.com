@@ -1,0 +1,250 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #0e0e0e;
+    color: white;
+}
+
+/* Estilos de navbar coputer and movile con efectos y animaciones de entrada*/
+/* Primero dando estilos a computer */
+
+header ~ nav{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content:space-between;
+}
+
+.active{
+    display: none;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.logo::first-letter{
+color: blueviolet;
+}
+
+.menu{
+    list-style: none;
+    display: flex;
+}
+
+.menu li a{
+    color: white;
+    text-decoration: none;
+    margin-right:20px ;
+
+}
+
+.menu-select{
+    background-color: blueviolet;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.menu li a:hover {
+    background-color: blueviolet;
+    padding: 10px;
+    border-radius: 10px;
+    transition: all .5s;
+}
+
+.btn{
+    border: none;
+    background-color: white;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    position: fixed;
+    right: 50px;
+}
+
+.cambio-color .btn{
+    background-color: black;
+    color: white;
+
+}
+.container-nav-seccion{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+}
+
+/* animacion de la imagen del navbar */
+
+.img-navbar{
+    background-image: url(./Imagenes/undraw_programming_re_kg9v.svg);
+    background-position:  center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 400px;
+    animation: an1 4s ease infinite;
+}
+
+@keyframes an1 {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(20px);
+    }
+    
+}
+
+.text-nav-seccion{
+    font-size: 25px;
+}
+
+/* Animacion y estilo de texto Web developer   */
+
+span{
+    display: block;
+    font-family: monospace;
+    white-space: nowrap;
+    border-right: 1px solid;
+    width: 14ch;
+    font-size:20px ;  
+
+    animation: typing 2s steps(14), 
+    blink .5s infinite step-end alternate;
+    overflow: hidden;
+    color: blueviolet;
+  }
+
+  @keyframes typing  {
+    from{ width: 0;}
+  
+}
+
+  @keyframes blink {
+    50%{border-color: transparent;}
+}
+
+.cambio-color{
+    background-color: white;
+    color:black;
+}
+
+.cambio-color .menu li a {
+    color: black;
+}
+
+.cambio-color .menu li a:hover{
+    color:white;
+}
+
+.cambio-color #select{
+    color:white;
+}
+
+/* Version mobile */
+
+@media screen and (max-width: 850px) {
+    .active{
+        display: block;
+        position: fixed;
+        left: 90%;
+    }
+    
+    .menu{
+        display: flex;
+        flex-direction: column;
+        line-height: 50px;
+        position: fixed;
+        top: 60px;
+        background-color: white;
+        width: 60%;
+        right: 0;
+        height: 100vh;
+        align-items: center;
+        text-align: center;
+        z-index: 1;
+        transition: all 1s;
+        justify-content: center;
+    }
+
+    .menu li a{
+        color: black;
+    }
+
+    .menu li a:hover{
+        color: white;
+    }
+
+    .menu-active{
+        left: 100%;
+    }
+
+    .cambio-color .menu{
+        background-color: black;
+    }
+
+     #select{
+        color:white;
+    }
+
+    .cambio-color .menu li a{
+        color: white;
+    }
+
+    .container-nav-seccion{
+        display: flex;
+        flex-direction: column;
+        align-items:center ;
+        text-align: center;
+    }
+    .text-nav-seccion{
+        font-size: 20px;
+    }
+    .img-navbar{
+        margin-top: 30px;
+        width: 200px;
+        height: 200px;
+    }
+
+    .btn{
+        right: 30px;
+    }
+    
+}
+
+/*Comenzando nuevamente version movile  */
+
+footer{
+    height: 100px;
+    top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer p{
+    margin: 40px;
+    color: blueviolet;
+}
+
+
+.redes-sociales{
+    display: flex;
+    flex-direction: column;
+    margin: 40px;
+}
+
+.redes-sociales a{
+    text-decoration: none;
+    color: white;
+}
+
+.redes-sociales a:hover{
+    color: blueviolet;
+}
+
