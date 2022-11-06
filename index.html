@@ -7,6 +7,7 @@
     <title>PaginaWeb | Dilan Espinoza</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="shortcut icon" href="./Imagenes/favicon.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/84a3fca9be.js" crossorigin="anonymous"></script>
 </head>
 <body id="body" class="">
@@ -19,21 +20,44 @@
             </div>
             <ul class="menu">
                 <li><a href="#" class="menu-select" id="select">Home</a></li>
-                <li><a href="#">About me</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#about" >About me</a></li>
+                <li><a href="#contact">Contact</a></li>
                 <li><a href="#">Portafolio</a></li>
             </ul>
         </nav>
         <div class="container-nav-seccion ">
             <div class="descricion"><p class="text-nav-seccion animate__animated animate__fadeInLeft">Hola, mi nombre es Dilan Espinoza <br> y esta es mi pagina web que he realizado <br> con Html, Css y JavaScrip </p>
-                <span>Web Developer.</span></div>
+                <span class="span_1">Web Developer.</span></div>
             <div class="img-navbar"></div>
         </div>
     </header>
     <button-type onclick="combioColor()" class="btn"></button-type>
-    <section class="about"></section>
-    <section class="contac"></section>
-    <section class="portafolio"></section>
+    <div class="divicion" id="about"></div>
+    <h2 class="title">About me</h2>
+    <section class="about-seccion" ">
+       <div class="img-about"></div> 
+       <div class="text-about">
+           <p>Soy un joven apacionado por la programacion que esta <br> empesando por este  diverso mundo. Estoy cursando el colegio <br>y estoy en segundo y me falta un año para acabarlo.
+            <span class="span_2">Joven Programador</span>
+       </div>
+    </section>
+    <div class="divicion-1" id="contact"></div>
+    <h2 class="title">Contact</h2>
+    <section class="contac">
+        <div class="card-container-contact">
+            <div class="card card_1">Facebook</div>
+            <div class="card card_2">GitHub</div>
+            <div class="card card_3">Instagran</div>
+        </div>
+    </section>
+    <h2 class="title"></h2>
+    <section class="portafolio">
+        <div class="portafolio-container">
+            <a href="https://dilane57.github.io/primera-pagina-web.com/" target="_blank" class="img-portafolio-1"></a>
+            <a href="https://dilane57.github.io/galery-of-art/" target="_blank" class="img-portafolio-2"></a>
+            <a href="https://dilane57.github.io/dilan-blog/" target="_blank" class="img-portafolio-3"> </a>
+        </div>
+        </section>
     <script src="main.js"></script>
 </body>
 </html>
